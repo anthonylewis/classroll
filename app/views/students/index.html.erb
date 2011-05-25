@@ -5,21 +5,13 @@
     <th>Name</th>
     <th>Email</th>
     <th>Url</th>
-    <th>Bio</th>
-    <th></th>
-    <th></th>
-    <th></th>
   </tr>
 
 <% @students.each do |student| %>
   <tr>
-    <td><%= student.name %></td>
+    <td><%= link_to student.name, student %></td>
     <td><%= student.email %></td>
     <td><%= student.url %></td>
-    <td><%= student.bio %></td>
-    <td><%= link_to 'Show', student %></td>
-    <td><%= link_to 'Edit', edit_student_path(student) %></td>
-    <td><%= link_to 'Destroy', student, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
