@@ -1,5 +1,5 @@
 Classroll::Application.routes.draw do
-  resources :students
+  resources :students, :only => [:index, :show, :new, :create]
 
   root :to => "students#index"
 
