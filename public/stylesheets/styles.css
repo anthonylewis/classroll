@@ -1,9 +1,40 @@
-body { background-color: #fff; color: #333; }
+body { background-color: #222228; color: #999; }
 
 body, p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size:   13px;
   line-height: 18px;
+}
+
+div#wrapper {
+  background-color: #fff; color: #333;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  margin: 50px auto;
+  padding: 20px 20px 40px 20px;
+  width: 600px;
+}
+
+div#wrapper h1 {
+  padding-bottom: 20px;
+}
+
+div#wrapper table {
+  margin: 0 auto;
+  width: 100%;
+}
+
+div#wrapper table th {
+  text-align: left;
+}
+
+div#wrapper input {
+  border: 1px solid #888;
+}
+
+div#wrapper textarea {
+  border: 1px solid #888;
 }
 
 pre {
@@ -12,9 +43,8 @@ pre {
   font-size: 11px;
 }
 
-a { color: #000; }
-a:visited { color: #666; }
-a:hover { color: #fff; background-color:#000; }
+a { color: #339; text-decoration: none; }
+a:hover { text-decoration: underline; }
 
 div.field, div.actions {
   margin-bottom: 10px;
